@@ -101,12 +101,14 @@ body {
   letter-spacing: 0.02em;
 }
 .header-item {
-  display: flex;
+  align-items: center;
 }
 
 .contact-icon {
   margin-right: 10px;
   fill: var(--icon-color);
+
+  display: block;
 }
 
 .contacts.contacts .header-item + .header-item {
@@ -120,6 +122,7 @@ body {
   text-decoration: none;
   align-items: center;
   justify-content: center;
+  display: flex;
 }
 
 .link-contacts:hover {
@@ -231,18 +234,13 @@ body {
   align-items: center;
   justify-content: center;
 }
-.inv-footer-link-twit {
-  width: 44px;
-  height: 44px;
-  background: var(--active-link-color);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .footer-icon {
   fill: var(--full-wight);
+}
+
+.inv-footer-link:hover,
+.inv-footer-link:focus {
+  background-color: var(--active-link-color);
 }
 /* ----------------Portfolio */
 /* ----------------кнопки навигации */
@@ -413,12 +411,17 @@ body {
 .benefits-list .benefits-list-item + .benefits-list-item {
   margin-left: 30px;
 }
-.benefits-icon {
-  padding: 25px 100px;
-  margin-bottom: 30px;
-
+.benefits-icon-container {
+  width: 270px;
+  height: 120px;
   background-color: var(--background-color-bottum);
+  background-size: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 30px;
 }
+
 .benefits-list-item {
   width: 270px;
 }
